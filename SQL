@@ -1,0 +1,4 @@
+/*total count */
+SELECT COUNT(*) AS total
+FROM patients
+
