@@ -2,3 +2,9 @@
 SELECT COUNT(*) AS total
 FROM patients
 
+select * from patients where gender like 'M'
+
+select * from patients where patient_height > 165 AND  patient_height < 170
+
+UPDATE patients SET health_card_num = NULL WHERE gender like 'F'
+Select * from patients
