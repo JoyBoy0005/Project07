@@ -1,0 +1,103 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-radius: 50%; /* Make images circular */
+}
+
+.image.spin {
+    transform: rotate(360deg);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.controls label,
+.controls input,
+.controls button,
+.controls div {
+    margin: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .controls label,
+    .controls input,
+    .controls button,
+    .controls div {
+        margin: 10px;
+        width: auto;
+        max-width: none;
+    }
+}
+
+.controls button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+@media (min-width: 600px) {
+    .controls button {
+        width: auto;
+        font-size: 1em;
+    }
+}
+
+#refreshTimer {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgb(130, 181, 130);
+    color: rgb(213, 124, 124);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #807d7d;
+    color: white;
+}
